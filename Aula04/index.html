@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aula 04 - Formulários</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Informe seu nome">
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="site">Site:</label>
+            <input type="url" id="site" name="site">
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone">
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" min="0" max="120">
+
+            <label for="peso">Peso:</label>
+            <input type="range" id="peso" name="peso" min="0" max="150">
+
+            <label for="nascimento">Data de Nascimento:</label>
+            <input type="date" id="nascimento" name="nascimento">
+
+            <label for="cor">Cor favorita:</label>
+            <input type="color" id="cor" name="cor">
+
+            <label for="arquivo">Arquivo:</label>
+            <input type="file" id="arquivo" name="arquivo">
+
+            <input type="hidden" name="acao" value="enviarDados">
+
+            <label>
+                <input type="checkbox" name="aceita" value="sim">
+                Aceito os termos
+            </label>
+
+            <label>Gênero:</label>
+            <label>
+                <input type="radio" name="genero" value="feminino">
+                Feminino
+            </label>
+            <label>
+                <input type="radio" name="genero" value="masculino">
+                Masculino
+            </label>
+            <label>
+                <input type="radio" name="genero" value="outro">
+                Outro
+            </label>
+
+            <label for="comentario">Comentário:</label>
+            <textarea id="comentario" name="comentario" rows="4" cols="40" placeholder="Digite aqui..."></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Opções</legend>
+
+            <label for="cidade">Cidade:</label>
+            <select id="cidade" name="cidade">
+                <optgroup label="Região Sudeste">
+                    <option value="sp">São Paulo</option>
+                    <option value="rj">Rio de Janeiro</option>
+                </optgroup>
+                <optgroup label="Região Centro-Oeste">
+                    <option value="mg">Minas Gerais</option>
+                    <option value="df">Distrito Federal</option>
+                </optgroup>
+            </select>
+
+            <label for="cores">Cores preferidas:</label>
+            <select id="cores" name="cores" multiple size="4">
+                <option value="vermelho">Vermelho</option>
+                <option value="verde">Verde</option>
+                <option value="azul">Azul</option>
+                <option value="amarelo">Amarelo</option>
+            </select>
+
+            <label for="estado">Estado:</label>
+            <input list="estados" id="estado" name="estado">
+            <datalist id="estados">
+                <option value="Minas Gerais">
+                <option value="São Paulo">
+                <option value="Rio de Janeiro">
+                <option value="Distrito Federal">
+            </datalist>
+
+            <label for="resultado">Resultado:</label>
+            <output id="resultado" name="resultado">0</output>
+
+            <label for="progresso">Progresso:</label>
+            <progress id="progresso" value="60" max="100">60%</progress>
+
+            <label for="nota">Nota:</label>
+            <meter id="nota" value="7" min="0" max="10">7/10</meter>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+        <button type="button">Botão</button>
+        <input type="image" src="https://picsum.photos/100/30" alt="Enviar com imagem">
+    </form>
+</body>
+</html>
