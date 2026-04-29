@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-principal {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: linear-gradient(#fefefe, #ccc);
+    /* height: 80px; */
+}
+.menu-principal>li {
+    display: inline-block;
+}
+.menu-principal>li a{
+    height: 80px;
+    padding: 0 20px;
+    line-height: 80px;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    display: block;
+}
+.menu-principal>li a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.menu-principal ul {
+    display: none;
+}
