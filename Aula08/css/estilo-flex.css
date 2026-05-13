@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: aquamarine;
+}
+main {
+    background-color: cadetblue;
+    flex: 1;
+}
+footer {
+    background-color: yellowgreen;
+}
