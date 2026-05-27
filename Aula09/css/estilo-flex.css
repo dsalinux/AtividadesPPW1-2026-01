@@ -10,6 +10,45 @@ header{
     padding: 0.5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo {
+    flex: 1;
+}
+header .logo img {
+    height: 60px;
+}
+header nav.menu {
+    /* flex:1; */
+    display: flex;
+    justify-content: center;
+}
+header nav.menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+header nav.menu ul li a {
+    padding:10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+header nav.menu ul li a:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+/* header .contato {
+    flex: 1;
+    display: flex;
+} */
+header .contato a {
+    font-size: 1.2em;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
 }
 main {
     background-color: #fff;
