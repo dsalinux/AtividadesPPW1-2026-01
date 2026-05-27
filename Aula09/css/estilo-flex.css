@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: #11738f;
+    padding: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+main {
+    background-color: #fff;
+    flex: 1;
+}
+footer {
+    background-color: #11738f;
+    padding: 1rem;
+
+}
