@@ -57,10 +57,9 @@ main {
     padding: 10px;
 }
 .produtos {
-    display: flex;
+    display: grid;
     gap: 20px;
-    /* flex-wrap: wrap; */
-    justify-content: center;
+    grid-template-columns: repeat(5, 1fr);
 }
 .produtos .produto {
     border: 1px solid #bbb;
